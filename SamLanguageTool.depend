@@ -1,0 +1,34 @@
+# depslib dependency file v1.0
+1647808986 source:d:\codejeu\samlanguagetool\main.cpp
+	<iostream>
+	<fstream>
+	<SLT/Reader.h>
+
+1647807515 source:d:\codejeu\samlanguagetool\src\slt\tokenizer\tokenizer.cpp
+	"Tokenizer.h"
+
+1647808213 d:\codejeu\samlanguagetool\include\slt\tokenizer\tokenizer.h
+	"SLT/Reader/Reader.h"
+	<vector>
+
+1647807513 source:d:\codejeu\samlanguagetool\src\slt\tokenizer\simpletokenizer.cpp
+	"SimpleTokenizer.h"
+
+1647807205 d:\codejeu\samlanguagetool\include\slt\tokenizer\simpletokenizer.h
+	"SLT/Tokenizer/Tokenizer.h"
+
+1647807520 source:d:\codejeu\samlanguagetool\src\slt\reader\reader.cpp
+	"Reader.h"
+
+1647808088 d:\codejeu\samlanguagetool\include\slt\reader\reader.h
+	<iostream>
+
+1647809306 source:d:\codejeu\samlanguagetool\src\slt\reader\inputstreamreader.cpp
+	"InputStreamReader.h"
+
+1647809145 d:\codejeu\samlanguagetool\include\slt\reader\inputstreamreader.h
+	"Reader.h"
+
+1647808789 d:\codejeu\samlanguagetool\include\slt\reader.h
+	"Reader/InputStreamReader.h"
+
