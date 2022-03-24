@@ -2,9 +2,10 @@
 #define READER_H
 
 #include <iostream>
+#include <SLT/Pipe/DataPipe.h>
 
 namespace slt{
-    class Reader
+    class Reader : public DataPipe<char>
     {
         public:
             virtual char next()=0;

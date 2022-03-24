@@ -32,3 +32,48 @@
 1647808789 d:\codejeu\samlanguagetool\include\slt\reader.h
 	"Reader/InputStreamReader.h"
 
+1647849139 source:c:\users\ds001272\documents\samlanguagetool\main.cpp
+	<iostream>
+	<fstream>
+	<SLT/Reader.h>
+
+1647848870 c:\users\ds001272\documents\samlanguagetool\include\slt\reader.h
+	"Reader/InputStreamReader.h"
+
+1647848870 c:\users\ds001272\documents\samlanguagetool\include\slt\reader\inputstreamreader.h
+	"Reader.h"
+
+1648109014 c:\users\ds001272\documents\samlanguagetool\include\slt\reader\reader.h
+	<iostream>
+	<SLT/Pipe/DataPipe.h>
+
+1647849150 source:c:\users\ds001272\documents\samlanguagetool\src\slt\reader\inputstreamreader.cpp
+	"SLT/Reader/InputStreamReader.h"
+
+1647849170 source:c:\users\ds001272\documents\samlanguagetool\src\slt\reader\reader.cpp
+	"SLT/Reader/Reader.h"
+
+1647849794 source:c:\users\ds001272\documents\samlanguagetool\src\slt\tokenizer\simpletokenizer.cpp
+	"SLT/Tokenizer/SimpleTokenizer.h"
+
+1647849328 c:\users\ds001272\documents\samlanguagetool\include\slt\tokenizer\simpletokenizer.h
+	"SLT/Tokenizer/Tokenizer.h"
+
+1647848870 c:\users\ds001272\documents\samlanguagetool\include\slt\tokenizer\tokenizer.h
+	"SLT/Reader/Reader.h"
+	<vector>
+
+1647849188 source:c:\users\ds001272\documents\samlanguagetool\src\slt\tokenizer\tokenizer.cpp
+	"SLT/Tokenizer/Tokenizer.h"
+
+1648108126 source:c:\users\ds001272\documents\samlanguagetool\src\slt\pipe\datapipe.cpp
+	"DataPipe.h"
+
+1647935965 c:\users\ds001272\documents\samlanguagetool\include\slt\pipe\datapipe.h
+
+1648108040 source:c:\users\ds001272\documents\samlanguagetool\src\slt\pipe\buffereddatapipe.cpp
+	"BufferedDataPipe.h"
+
+1648109311 c:\users\ds001272\documents\samlanguagetool\include\slt\pipe\buffereddatapipe.h
+	"DataPipe.h"
+

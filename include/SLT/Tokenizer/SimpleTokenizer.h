@@ -7,6 +7,8 @@ namespace slt{
     class SimpleTokenizer : public Tokenizer
     {
         private:
+            Reader *input;
+
         public:
             std::string separator=" \t\n\r";
             std::string escape="";
@@ -15,7 +17,7 @@ namespace slt{
             std::string iseparator="";
             std::string groupsolo="";
 
-            SimpleTokenizer(std::istream);
+            SimpleTokenizer(Reader*);
 
             std::string next();
             bool hasnext();

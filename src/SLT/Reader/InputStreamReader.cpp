@@ -1,4 +1,4 @@
-#include "InputStreamReader.h"
+#include "SLT/Reader/InputStreamReader.h"
 
 slt::InputStreamReader::InputStreamReader(std::istream *input): input(input){
     n=input->get();
