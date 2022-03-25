@@ -1,9 +1,10 @@
 # depslib dependency file v1.0
-1648245272 source:d:\codejeu\samlanguagetool\main.cpp
+1648250693 source:d:\codejeu\samlanguagetool\main.cpp
 	<iostream>
 	<fstream>
 	<SLT/ReaderAndPipe.h>
 	<SLT/Tokenizer.h>
+	<SLT/Tree/TreeNode.h>
 
 1648241577 source:d:\codejeu\samlanguagetool\src\slt\tokenizer\tokenizer.cpp
 	"SLT/Tokenizer/Tokenizer.h"
@@ -97,4 +98,12 @@
 1648242445 d:\codejeu\samlanguagetool\include\slt\tokenizer.h
 	<SLT/Tokenizer/Tokenizer.h>
 	<SLT/Tokenizer/SimpleTokenizer.h>
+
+1648247740 source:d:\codejeu\samlanguagetool\src\slt\tree\treenode.cpp
+	"TreeNode.h"
+
+1648251485 d:\codejeu\samlanguagetool\include\slt\tree\treenode.h
+	<string>
+	<vector>
+	<iostream>
 
