@@ -2,6 +2,7 @@
 
 #include <fstream>
 #include <SLT/ReaderAndPipe.h>
+#include <SLT/Tokenizer.h>
 
 using namespace std;
 
@@ -9,11 +10,15 @@ int main()
 {
     std::ifstream file("test.txt");
     slt::InputStreamReader reader(&file);
-    slt::BufferedDataPipe<char> pipe(&reader,10);
-    while(pipe.hasnext()){
-        char c=pipe.next();
-        pipe.backward();
-        std::cout<<"["<<c<<":"<<(int)c<<"]";
+    slt::SimpleTokenizer tokenizer(&reader);
+    tokenizer.escape="\\";
+    tokenizer.mescape="\"'`";
+    tokenizer.solo="?.!";
+    tokenizer.comment="#";
+    tokenizer.groupsolo="&-";
+
+    while(tokenizer.hasnext()){
+        std::cout<<"["<<tokenizer.next()<<"] ";
     }
 
     return 0;

@@ -1,11 +1,11 @@
 #ifndef SLT_TOKENIZER_TOKENIZER_H
 #define SLT_TOKENIZER_TOKENIZER_H
 
-#include "SLT/Reader/Reader.h"
+#include "SLT/ReaderAndPipe.h"
 #include <vector>
 
 namespace slt{
-    class Tokenizer
+    class Tokenizer : public DataPipe<std::string>
     {
         public:
             virtual std::string next()=0;
@@ -13,7 +13,7 @@ namespace slt{
 
             std::vector<std::string> getAll();
     };
-    using TokenizerFactory=Tokenizer*(*)(Reader*);
+    using TokenizerFactory=PipeFactory<char,std::string>;
 }
 
 #endif // SLT_TOKENIZER_TOKENIZER_H

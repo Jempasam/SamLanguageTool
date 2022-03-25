@@ -7,17 +7,17 @@ namespace slt{
     class SimpleTokenizer : public Tokenizer
     {
         private:
-            Reader *input;
+            BufferedDataPipe<char> input;
 
         public:
             std::string separator=" \t\n\r";
             std::string escape="";
             std::string mescape="";
             std::string solo="";
-            std::string iseparator="";
             std::string groupsolo="";
+            std::string comment="";
 
-            SimpleTokenizer(Reader*);
+            SimpleTokenizer(DataPipe<char>*);
 
             std::string next();
             bool hasnext();

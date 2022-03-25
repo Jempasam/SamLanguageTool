@@ -35,7 +35,7 @@ namespace slt{
             }
 
             bool hasnext(){
-                return bufferpos<bufferhead || input->hasnext();
+                return bufferpos!=bufferhead || input->hasnext();
             }
 
             void backward(){
