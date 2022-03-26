@@ -4,32 +4,29 @@
 #include <SLT/ReaderAndPipe.h>
 #include <SLT/Tokenizer.h>
 #include <SLT/Tree/TreeNode.h>
+#include <SLT/Parser/Parser.h>
+#include <stdlib.h>
 
 using namespace std;
 
 int main()
 {
-    std::ifstream file("test.txt");
-    slt::InputStreamReader reader(&file);
-    slt::SimpleTokenizer tokenizer(&reader);
-    tokenizer.escape="\\";
-    tokenizer.mescape="\"'`";
-    tokenizer.solo="?.!";
-    tokenizer.comment="#";
-    tokenizer.groupsolo="&-";
-    while(tokenizer.hasnext()){
-        std::cout<<"["<<tokenizer.next()<<"] ";
-    }
+    MultiParser pars;
 
-    std::cout<<std::endl;
+    pars.add<int>([](std::string str){
+        int *ret=new int;
+        *ret=atoi(str.c_str());
+        return ret;
+    });
 
-    ObjectTreeNode<std::string> o("France");
-    o.addValue("type","pays");
-    ObjectTreeNode<std::string> *sub=o.addObject("PACA");
-    sub->addValue("type","region");
-    sub->addValue("largename","Provence Alpes Cote D'Azur");
+    pars.add<bool>([](std::string str){
+        bool *ret=new bool;
+        *ret=str!="false";
+        return ret;
+    });
 
-    std::cout<<o;
+    std::cout<<pars.parse<int>("0")<<std::endl;
+    std::cout<<pars.parse<bool>("false")<<std::endl;
 
     return 0;
 }

@@ -115,6 +115,7 @@ class ObjectTreeNode : public TreeNode<T>
 
         ObjectTreeNode(std::string n): TreeNode<T>(n){
         }
+
         void toString(std::ostream& output) const{
             output<<this->getName()<<":(";
             for(int i=0; i<size(); i++){
